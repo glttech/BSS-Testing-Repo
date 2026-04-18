@@ -17,6 +17,7 @@ Purpose: shared real-time board for developer + tester. Update this file continu
 
 | Bug ID | Severity | Dev Status | Fix Summary (short) | Commit | Deployed At (IST) | QA Retest | Tester | Retest Time (IST) | Notes |
 |---|---|---|---|---|---|---|---|---|---|
+| BUG-023 | High | Fixed | Follow-up now supports full datetime input and timestamp display in communication + caller flows | 6a0af56 | 2026-04-18 16:26 | Pending |  |  |  |
 | BUG-003 | Critical | Fixed | Global search suggestions + navigation for candidates/companies/jobs | 955606e | 2026-04-18 14:36 | Pending |  |  |  |
 | BUG-012 | Critical | Fixed | In Pipeline dynamic metric + unique candidate counting in active stages | ae22be4, 1526be1 | 2026-04-18 11:48 | Pending |  |  |  |
 | BUG-015 | Critical | Fixed | Create Login now triggers login setup/reset flow via contact email | 955606e | 2026-04-18 14:36 | Pending |  |  |  |
@@ -32,6 +33,7 @@ Purpose: shared real-time board for developer + tester. Update this file continu
 - 2026-04-18 09:18 UTC — Seeded P0 fix entries with commit references and deploy timestamps.
 - 2026-04-18 09:39 UTC — Fixed BUG-007 and BUG-008 in topbar; deployed frontend and added for QA retest.
 - 2026-04-18 09:47 UTC — Updated live board columns to include Severity and switched display timestamps to IST.
+- 2026-04-18 10:57 UTC — Fixed BUG-023 (follow-up datetime support) and deployed; QA retest placeholder added.
 
 ---
 
