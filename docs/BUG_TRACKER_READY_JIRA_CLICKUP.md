@@ -17,14 +17,14 @@ Source normalized from shared issue list. Numbering, wording, priority, and acce
 - **BUG-003:** ✅ Fixed + ✅ Retest Pass
   - Short fix: implemented working topbar global search with live suggestions (candidates/companies/jobs) and navigation.
   - Commit: `955606e`
-- **BUG-012:** ✅ Fixed + ❌ Retest Fail
+- **BUG-012:** ✅ Fixed + 🔁 Patch-2 Deployed (retest pending)
   - Short fix: In Pipeline metric made dynamic and aligned to unique-candidate counting across active pipeline stages.
-  - Commits: `ae22be4`, `1526be1`
-  - Retest note: pipeline count mismatch/relevance issue still reported by tester.
-- **BUG-015:** ✅ Fixed + ❌ Retest Fail
-  - Short fix: wired Create Login button to trigger login-setup/reset flow using company contact email with success/error toast.
-  - Commit: `955606e`
-  - Retest note: tester reports email not received.
+  - Patch-2: excluded null candidateId from aggregation to prevent inflated count.
+  - Commits: `ae22be4`, `1526be1`, `9c061ed`
+- **BUG-015:** ✅ Fixed + 🔁 Patch-2 Deployed (retest pending)
+  - Short fix: Create Login was initially wired to reset-flow trigger.
+  - Patch-2: Create Login now creates portal user first; if account already exists, fallback to reset email flow.
+  - Commits: `955606e`, `9c061ed`
 - **BUG-021:** ✅ Fixed + ✅ Retest Pass
   - Short fix: Cancel button in company edit is now non-submit (`type="button"`), so it no longer updates data.
   - Commit: `955606e`
