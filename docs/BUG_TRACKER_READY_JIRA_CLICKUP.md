@@ -14,19 +14,21 @@ Source normalized from shared issue list. Numbering, wording, priority, and acce
 ## Current Execution Status (Live Progress)
 
 ### P0 Bug Status Snapshot
-- **BUG-003:** ✅ Fixed (retest pending)
+- **BUG-003:** ✅ Fixed + ✅ Retest Pass
   - Short fix: implemented working topbar global search with live suggestions (candidates/companies/jobs) and navigation.
   - Commit: `955606e`
-- **BUG-012:** ✅ Fixed (retest pending)
+- **BUG-012:** ✅ Fixed + ❌ Retest Fail
   - Short fix: In Pipeline metric made dynamic and aligned to unique-candidate counting across active pipeline stages.
   - Commits: `ae22be4`, `1526be1`
-- **BUG-015:** ✅ Fixed (retest pending)
+  - Retest note: pipeline count mismatch/relevance issue still reported by tester.
+- **BUG-015:** ✅ Fixed + ❌ Retest Fail
   - Short fix: wired Create Login button to trigger login-setup/reset flow using company contact email with success/error toast.
   - Commit: `955606e`
-- **BUG-021:** ✅ Fixed (retest pending)
+  - Retest note: tester reports email not received.
+- **BUG-021:** ✅ Fixed + ✅ Retest Pass
   - Short fix: Cancel button in company edit is now non-submit (`type="button"`), so it no longer updates data.
   - Commit: `955606e`
-- **BUG-022:** ✅ Fixed (retest pending)
+- **BUG-022:** ✅ Fixed + ✅ Retest Pass
   - Short fix: after create, app redirects to the newly created company detail and company list fetch limit increased to avoid visibility confusion.
   - Commit: `32f1681`
 
@@ -275,11 +277,11 @@ Source normalized from shared issue list. Numbering, wording, priority, and acce
 
 | Bug ID | Dev Status | QA Retest | Tester | Date | Notes |
 |---|---|---|---|---|---|
-| BUG-003 | Fixed | Pass | Fixed  | 18-04-26 |  |
-| BUG-012 | Fixed | Fail |   | 18-04-26 | If user add new user in cnadidate its not reflect over the under pipeline still nor after refreshing the data as well |
-| BUG-015 | Fixed | Pending |  |  |  |
-| BUG-021 | Fixed | Pending |  |  |  |
-| BUG-022 | Fixed | Pending |  |  |  |
+| BUG-003 | Fixed | Pass | Dimpi | 18-04-26 | Clear/cross action suggested for quick search reset UX. |
+| BUG-012 | Fixed | Fail | Dimpi | 18-04-26 | Pipeline count mismatch/relevance issue reported; needs follow-up patch. |
+| BUG-015 | Fixed | Fail | Dimpi | 18-04-26 | Toast shown but no email received by tester. |
+| BUG-021 | Fixed | Pass | Dimpi | 18-04-26 | Working as expected. |
+| BUG-022 | Fixed | Pass | Dimpi | 18-04-26 | Company should appear without manual refresh (monitor in next build). |
 
 **QA Retest values:** Pending / Pass / Fail
 
