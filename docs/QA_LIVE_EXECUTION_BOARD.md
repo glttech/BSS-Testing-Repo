@@ -13,7 +13,7 @@ Purpose: shared real-time board for developer + tester. Update this file continu
 
 ---
 
-## Current Iteration: P0 Stabilization
+## Current Iteration: P0 + P1 Stabilization
 
 | Bug ID | Dev Status | Fix Summary (short) | Commit | Deployed At (UTC) | QA Retest | Tester | Retest Time (UTC) | Notes |
 |---|---|---|---|---|---|---|---|---|
@@ -22,12 +22,15 @@ Purpose: shared real-time board for developer + tester. Update this file continu
 | BUG-015 | Fixed | Create Login now triggers login setup/reset flow via contact email | 955606e | 2026-04-18 09:06 | Pending |  |  |  |
 | BUG-021 | Fixed | Cancel in company edit is non-submit; no accidental update | 955606e | 2026-04-18 09:06 | Pending |  |  |  |
 | BUG-022 | Fixed | After create redirect to new company detail + companies list limit expanded | 32f1681 | 2026-04-18 09:13 | Pending |  |  |  |
+| BUG-007 | Fixed | Notification bell now opens actionable items list with short message and redirection | 3d5e31f | 2026-04-18 09:39 | Pending |  |  |  |
+| BUG-008 | Fixed | Profile menu now routes to profile/settings area (admin) instead of candidates | 3d5e31f | 2026-04-18 09:39 | Pending |  |  |  |
 
 ---
 
 ## Agent Comment Stream (append-only)
 - 2026-04-18 09:18 UTC — Created shared live execution board for realtime developer/tester collaboration.
 - 2026-04-18 09:18 UTC — Seeded P0 fix entries with commit references and deploy timestamps.
+- 2026-04-18 09:39 UTC — Fixed BUG-007 and BUG-008 in topbar; deployed frontend and added for QA retest.
 
 ---
 
