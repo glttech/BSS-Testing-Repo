@@ -338,10 +338,19 @@ Source normalized from shared issue list. Numbering, wording, priority, and acce
 | Bug ID | Dev Status | QA Retest | Tester | Date | Notes |
 |---|---|---|---|---|---|
 | BUG-003 | Fixed | Pass | Dimpi | 18-04-26 | Clear/cross action suggested for quick search reset UX. |
-| BUG-012 | Fixed | Fail | Dimpi | 18-04-26 | Pipeline count mismatch/relevance issue reported; needs follow-up patch. |
-| BUG-015 | Fixed | Fail | Dimpi | 18-04-26 | Toast shown but no email received by tester. |
+| BUG-007 | Fixed | Pass | Dimpi | 18-04-26 | Notification selection state may not refresh correctly after click. |
+| BUG-008 | Fixed | Pass | Dimpi | 18-04-26 | Profile/Settings route redundancy; Admin label clarity needed. |
+| BUG-012 | Fixed (Patch-2) | Pending |  |  | Retest after null candidateId exclusion patch. |
+| BUG-015 | Fixed (Patch-2) | Pending |  |  | Retest portal-user-create + reset-email fallback path. |
 | BUG-021 | Fixed | Pass | Dimpi | 18-04-26 | Working as expected. |
 | BUG-022 | Fixed | Pass | Dimpi | 18-04-26 | Company should appear without manual refresh (monitor in next build). |
+| BUG-023 | Fixed | Pending |  |  | Follow-up datetime support added; needs QA confirmation. |
+| BUG-024 | Open | Pending |  |  | Parse & Review route error pending fix. |
+| BUG-025 | Open | Pending |  |  | Unsupported upload icon removal pending. |
+| BUG-026 | Open | Pending |  |  | Candidate duplicate validation pending. |
+| BUG-027 | Open | Pending |  |  | Careers View action pending fix. |
+| BUG-028 | Open | Pending |  |  | Careers filters + count grids pending implementation. |
+| BUG-029 | Open | Pending |  |  | Industry dropdown controlled taxonomy pending. |
 
 **QA Retest values:** Pending / Pass / Fail
 
