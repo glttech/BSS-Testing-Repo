@@ -259,8 +259,8 @@ Source normalized from shared issue list. Numbering, wording, priority, and acce
 
 | Bug ID | Dev Status | QA Retest | Tester | Date | Notes |
 |---|---|---|---|---|---|
-| BUG-003 | Fixed | Pending |  |  |  |
-| BUG-012 | Fixed | Pending |  |  |  |
+| BUG-003 | Fixed | Pass | Fixed  | 18-04-26 |  |
+| BUG-012 | Fixed | Fail |   | 18-04-26 | If user add new user in cnadidate its not reflect over the under pipeline still nor after refreshing the data as well |
 | BUG-015 | Fixed | Pending |  |  |  |
 | BUG-021 | Fixed | Pending |  |  |  |
 | BUG-022 | Fixed | Pending |  |  |  |
