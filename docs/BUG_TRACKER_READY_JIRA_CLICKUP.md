@@ -271,6 +271,66 @@ Source normalized from shared issue list. Numbering, wording, priority, and acce
   - Saved follow-up displays include date and time in timeline/thread views.
   - Reschedule flow accepts and persists datetime value.
 
+## BUG-024
+- **Title:** Parse & Review in Job Descriptions returns "Route not found"
+- **Module:** Job Descriptions
+- **Priority:** P1
+- **Severity:** High
+- **Steps:** Open Job Descriptions and click Parse & Review.
+- **Actual:** Route not found error.
+- **Expected:** Parse & Review flow opens and functions.
+- **Acceptance:** Valid route exists and action completes without route error.
+
+## BUG-025
+- **Title:** Upload document icon shown where upload is not supported
+- **Module:** Job Descriptions UI
+- **Priority:** P2
+- **Severity:** Medium
+- **Steps:** Open the affected job screen and inspect available actions.
+- **Actual:** Upload icon is visible but unsupported.
+- **Expected:** Unsupported upload icon/action should be removed or disabled with clear message.
+- **Acceptance:** No misleading upload action is shown.
+
+## BUG-026
+- **Title:** Candidate duplicate validation missing (same email/name/phone can be re-added)
+- **Module:** Candidates
+- **Priority:** P1
+- **Severity:** High
+- **Steps:** Add a candidate using existing identifying details.
+- **Actual:** Candidate is created without duplicate guard.
+- **Expected:** Duplicate candidate detection should block or warn clearly.
+- **Acceptance:** Duplicate checks enforce at least email/phone uniqueness and show user-friendly error.
+
+## BUG-027
+- **Title:** Careers "View" action not functioning
+- **Module:** Careers
+- **Priority:** P1
+- **Severity:** High
+- **Steps:** Open careers list/admin and click View action.
+- **Actual:** No response or target page not opening.
+- **Expected:** View should open correct details page.
+- **Acceptance:** View action consistently navigates to valid details page.
+
+## BUG-028
+- **Title:** Careers module lacks filtering and count grids for visibility
+- **Module:** Careers
+- **Priority:** P2
+- **Severity:** Medium
+- **Steps:** Open careers list screen and review controls/summary.
+- **Actual:** No effective filters/count tiles for quick analysis.
+- **Expected:** Provide filters and summary count cards/grids.
+- **Acceptance:** Careers page supports filtering and visible count summaries.
+
+## BUG-029
+- **Title:** Industry should be controlled via dropdown to prevent inconsistent values
+- **Module:** Company form
+- **Priority:** P1
+- **Severity:** Medium
+- **Steps:** Enter arbitrary values in industry field across company creation/edit.
+- **Actual:** Free text creates inconsistent taxonomy.
+- **Expected:** Use predefined industry dropdown options.
+- **Acceptance:** Industry field uses controlled options with consistent value set.
+
 ---
 
 ## QA Retest Tracker (to close fixes formally)
@@ -293,7 +353,7 @@ Source normalized from shared issue list. Numbering, wording, priority, and acce
 - BUG-003, BUG-012, BUG-015, BUG-021, BUG-022
 
 ### Sprint Current (P1)
-- BUG-001, BUG-002, BUG-007, BUG-008, BUG-014, BUG-016, BUG-017, BUG-018, BUG-019, BUG-020, BUG-023
+- BUG-001, BUG-002, BUG-007, BUG-008, BUG-014, BUG-016, BUG-017, BUG-018, BUG-019, BUG-020, BUG-023, BUG-024, BUG-026, BUG-027, BUG-029
 
 ### Sprint Next (P2)
-- BUG-004, BUG-005, BUG-006, BUG-009, BUG-010, BUG-011, BUG-013
+- BUG-004, BUG-005, BUG-006, BUG-009, BUG-010, BUG-011, BUG-013, BUG-025, BUG-028
