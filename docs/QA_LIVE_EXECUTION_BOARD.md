@@ -18,13 +18,13 @@ Purpose: shared real-time board for developer + tester. Update this file continu
 | Bug ID | Severity | Dev Status | Fix Summary (short) | Commit | Deployed At (IST) | QA Retest | Tester | Retest Time (IST) | Notes |
 |---|---|---|---|---|---|---|---|---|---|
 | BUG-023 | High | Fixed | Follow-up now supports full datetime input and timestamp display in communication + caller flows | 6a0af56 | 2026-04-18 16:26 | Pending |  |  |  |
-| BUG-003 | Critical | Fixed | Global search suggestions + navigation for candidates/companies/jobs | 955606e | 2026-04-18 14:36 | Pending |  |  |  |
-| BUG-012 | Critical | Fixed | In Pipeline dynamic metric + unique candidate counting in active stages | ae22be4, 1526be1 | 2026-04-18 11:48 | Pending |  |  |  |
-| BUG-015 | Critical | Fixed | Create Login now triggers login setup/reset flow via contact email | 955606e | 2026-04-18 14:36 | Pending |  |  |  |
-| BUG-021 | Critical | Fixed | Cancel in company edit is non-submit; no accidental update | 955606e | 2026-04-18 14:36 | Pending |  |  |  |
-| BUG-022 | Critical | Fixed | After create redirect to new company detail + companies list limit expanded | 32f1681 | 2026-04-18 14:43 | Pending |  |  |  |
-| BUG-007 | High | Fixed | Notification bell now opens actionable items list with short message and redirection | 3d5e31f | 2026-04-18 15:09 | Pending |  |  |  |
-| BUG-008 | High | Fixed | Profile menu now routes to profile/settings area (admin) instead of candidates | 3d5e31f | 2026-04-18 15:09 | Pending |  |  |  |
+| BUG-003 | Critical | Fixed | Global search suggestions + navigation for candidates/companies/jobs | 955606e | 2026-04-18 14:36 | Pass | Dimpi |  | A clear (cross) icon should be provided after displaying global search results to allow users to easily clear the search input.|
+| BUG-012 | Critical | Fixed | In Pipeline dynamic metric + unique candidate counting in active stages | ae22be4, 1526be1 | 2026-04-18 11:48 | Fail | Dimpi |  | Pipeline count mismatch and incorrect redirection: the total count shows 106 while only 105 records are displayed. Additionally, clicking the pipeline redirects to the Job Description page instead of the Candidates page, which is misleading since the Candidates page reflects all candidates, not just those in the pipeline.  |
+| BUG-015 | Critical | Fixed | Create Login now triggers login setup/reset flow via contact email | 955606e | 2026-04-18 14:36 | Fail | Dimpi |  | Snackbar displays “Login setup/reset email flow triggered for company contact,” but no email is received. |
+| BUG-021 | Critical | Fixed | Cancel in company edit is non-submit; no accidental update | 955606e | 2026-04-18 14:36 | Pass |Dimpi  |  | Working as expected. |
+| BUG-022 | Critical | Fixed | After create redirect to new company detail + companies list limit expanded | 32f1681 | 2026-04-18 14:43 | Pass | Dimpi |  | The newly created company should be visible in the list without requiring a manual refresh. |
+| BUG-007 | High | Fixed | Notification bell now opens actionable items list with short message and redirection | 3d5e31f | 2026-04-18 15:09 | Pass | Dimpi |  | After the notification bell fix, clicking on a notification from the communication log does not update the selected notification. Instead, it continues to display the previously selected notification. |
+| BUG-008 | High | Fixed | Profile menu now routes to profile/settings area (admin) instead of candidates | 3d5e31f | 2026-04-18 15:09 | Pass | Dimpi |  | Redundant navigation issue: both ‘Profile’ and ‘Settings’ redirect to the same page. One of these options should be removed to avoid confusion, and the ‘Admin Panel’ should be renamed to ‘Settings’ or ‘Profile’ for better clarity and consistency. |
 
 ---
 
