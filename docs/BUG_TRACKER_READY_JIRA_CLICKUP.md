@@ -253,6 +253,22 @@ Source normalized from shared issue list. Numbering, wording, priority, and acce
 - **Expected:** Required-only valid payload always creates visible record.
 - **Acceptance:** Consistent create behavior independent of optional fields.
 
+## BUG-023
+- **Title:** Follow-up supports date only; users need full date + time scheduling and timestamp visibility
+- **Module:** Communication / Caller Workflow
+- **Priority:** P1
+- **Severity:** High
+- **Steps:**
+  1. Open communication log or caller update flow.
+  2. Set follow-up schedule.
+  3. Review saved follow-up value in timeline/thread.
+- **Actual:** UI accepts date-only and displays follow-up without time context.
+- **Expected:** UI should allow full datetime input and show saved timestamp (date + time) consistently.
+- **Acceptance:**
+  - Follow-up fields use datetime picker (`datetime-local`).
+  - Saved follow-up displays include date and time in timeline/thread views.
+  - Reschedule flow accepts and persists datetime value.
+
 ---
 
 ## QA Retest Tracker (to close fixes formally)
@@ -275,7 +291,7 @@ Source normalized from shared issue list. Numbering, wording, priority, and acce
 - BUG-003, BUG-012, BUG-015, BUG-021, BUG-022
 
 ### Sprint Current (P1)
-- BUG-001, BUG-002, BUG-007, BUG-008, BUG-014, BUG-016, BUG-017, BUG-018, BUG-019, BUG-020
+- BUG-001, BUG-002, BUG-007, BUG-008, BUG-014, BUG-016, BUG-017, BUG-018, BUG-019, BUG-020, BUG-023
 
 ### Sprint Next (P2)
 - BUG-004, BUG-005, BUG-006, BUG-009, BUG-010, BUG-011, BUG-013

@@ -87,8 +87,9 @@ Use this format for every new testing cycle to keep QA output consistent, action
    - `Apply Now` opens `/careers/:id`
    - Application submission with resume upload
 8. Communication log create + follow-up visibility
-9. Shortlist flow create/send
-10. Invoice creation flow
+9. **Mandatory datetime test:** Follow-up supports full date + time scheduling and displays timestamp in history/thread
+10. Shortlist flow create/send
+11. Invoice creation flow
 
 ---
 
