@@ -17,22 +17,6 @@ This file is the static bug catalog (definitions and acceptance criteria).
 
 > **Live status source of truth:** `docs/QA_LIVE_EXECUTION_BOARD.md`
 
-## Active Backlog Snapshot (definition-only)
-
-| Bug ID | Description | Severity | Notes |
-|---|---|---|---|
-| BUG-012 | In Pipeline count semantics mismatch/relevance issue | Critical | See live board for latest patch/retest status |
-| BUG-015 | Create Login flow trust gap (action vs actual email/account outcome) | Critical | See live board for latest patch/retest status |
-| BUG-023 | Follow-up needs full datetime + timestamp display | High | Implemented; awaiting QA retest |
-| BUG-024 | Parse & Review route reliability | High | Implemented; awaiting QA retest |
-| BUG-025 | Misleading upload icon/action in JD parse flow | Medium | Implemented; awaiting QA retest |
-| BUG-026 | Candidate duplicate validation missing | High | Implemented; awaiting QA retest |
-| BUG-027 | Careers View action broken | High | Implemented; awaiting QA retest |
-| BUG-028 | Careers filters + summary count visibility | Medium | Implemented; awaiting QA retest |
-| BUG-029 | Industry field should be controlled dropdown | Medium | Implemented; awaiting QA retest |
-
----
-
 ## BUG-001
 - **Title:** Duplicate validation errors displayed for invalid email input
 - **Module:** Company / Auth forms

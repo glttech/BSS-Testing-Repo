@@ -15,10 +15,10 @@ It does **not** contain application source code.
 - No retest should be marked complete until dev marks the fix complete in live board.
 - Overall **GREEN** is allowed only if all P0 tests are PASS.
 
-## Primary docs
-- `docs/QA_LIVE_EXECUTION_BOARD.md` (single source of live status)
-- `docs/BUG_TRACKER_READY_JIRA_CLICKUP.md` (bug definitions/catalog)
-- `docs/NEXT_ITERATION_TEST_FORMAT.md` (standard test run format)
-- `docs/PHASE1_TESTER_CHECKLIST.md` (phase-1 checklist)
-- `docs/RETEST_CHECKLIST_PENDING.md` (pending-fixed and blocked retests only)
-- `docs/ENVIRONMENT_MAP.md` (domain/branch/API parity map)
+## Primary docs (who uses what)
+- **Live status:** `docs/QA_LIVE_EXECUTION_BOARD.md`
+- **Bug definitions/history:** `docs/BUG_TRACKER_READY_JIRA_CLICKUP.md`
+- **Tester execution (full run):** `docs/PHASE1_TESTER_CHECKLIST.md`
+- **Pending retests only:** `docs/RETEST_CHECKLIST_PENDING.md`
+- **Environment/domain parity mapping:** `docs/ENVIRONMENT_MAP.md`
+- **Iteration run template (optional):** `docs/NEXT_ITERATION_TEST_FORMAT.md`
