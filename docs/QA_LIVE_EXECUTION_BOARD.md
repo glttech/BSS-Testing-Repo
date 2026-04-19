@@ -17,12 +17,12 @@ Purpose: shared real-time board for developer + tester. Update this file continu
 
 | Bug ID | Severity | Dev Status | Fix Summary (short) | Commit | Deployed At (IST) | QA Retest | Tester | Retest Time (IST) | Notes |
 |---|---|---|---|---|---|---|---|---|---|
-| BUG-029 | Medium | Fixed | Industry field converted to controlled dropdown options in company form | 1df934b | 2026-04-19 09:38 | Pending |  |  | Re-test company create/edit industry selection behavior |
-| BUG-028 | Medium | Fixed | Added careers filters (search/status/publish) and count summary grids in careers-admin | 9b2dff2 | 2026-04-19 10:07 | Pending |  |  | Re-test filter behavior + summary counts in careers-admin |
-| BUG-027 | High | Fixed | Careers admin View action now routes to JD detail page | 5569370 | 2026-04-19 06:40 | Pending |  |  | Re-test view action from careers admin table |
-| BUG-026 | High | Fixed | Duplicate candidate guard added on create/update using email/phone checks | dad4127 | 2026-04-19 09:33 | Pending |  |  | Re-test duplicate candidate creation/edit scenarios |
-| BUG-025 | Medium | Fixed | Replaced misleading upload icon/text in JD parse flow with parse-from-text action | 1df934b | 2026-04-19 09:38 | Pending |  |  | Re-test jobs import dialog UX for unsupported upload action removal |
-| BUG-024 | High | Fixed | Mounted JD parser routes under /api/v1/jds (parse-text and parse-and-validate) | 5569370 | 2026-04-19 06:40 | Pending |  |  | Re-test Parse & Review action from Jobs import dialog |
+| BUG-029 | Medium | Fixed | Industry field converted to controlled dropdown options in company form | 1df934b | 2026-04-19 09:38 | Fail  | Dimpi  |  | Unable to see the industry dropdown while creating or editing a company. |
+| BUG-028 | Medium | Fixed | Added careers filters (search/status/publish) and count summary grids in careers-admin | 9b2dff2 | 2026-04-19 10:07 | Pass | Dimpi |  | Re-test filter behavior + summary counts in careers-admin |
+| BUG-027 | High | Fixed | Careers admin View action now routes to JD detail page | 5569370 | 2026-04-19 06:40 | Fixed | Dimpi  |  | Re-test view action from careers admin table |
+| BUG-026 | High | Fixed | Duplicate candidate guard added on create/update using email/phone checks | dad4127 | 2026-04-19 09:33 | Fail | Dimpi |  | Duplicate applications are now restricted and not created, but the system still displays a “Application submitted successfully” message. Additionally, no confirmation email is sent after submission. |
+| BUG-025 | Medium | Fixed | Replaced misleading upload icon/text in JD parse flow with parse-from-text action | 1df934b | 2026-04-19 09:38 | Pass | Dimpi  |  | Re-test jobs import dialog UX for unsupported upload action removal |
+| BUG-024 | High | Fixed | Mounted JD parser routes under /api/v1/jds (parse-text and parse-and-validate) | 5569370 | 2026-04-19 06:40 | Pass | Dimpi |  | Re-test Parse & Review action from Jobs import dialog |
 | BUG-023 | High | Fixed | Follow-up now supports full datetime input and timestamp display in communication + caller flows | 6a0af56 | 2026-04-18 16:26 | Pending |  |  |  |
 | BUG-003 | Critical | Fixed | Global search suggestions + navigation for candidates/companies/jobs | 955606e | 2026-04-18 14:36 | Pass | Dimpi |  | A clear (cross) icon should be provided after displaying global search results to allow users to easily clear the search input.|
 | BUG-012 | Critical | Fixed (Patch-2) | Excluded null candidateId from pipeline aggregation to prevent phantom count inflation | 9c061ed | 2026-04-19 00:06 | Pending | Dimpi |  | Re-test requested: verify pipeline total and list relevance after patch-2. |
