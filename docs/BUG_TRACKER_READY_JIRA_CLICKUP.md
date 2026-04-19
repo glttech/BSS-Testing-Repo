@@ -11,28 +11,25 @@ Source normalized from shared issue list. Numbering, wording, priority, and acce
 
 ---
 
-## Current Execution Status (Live Progress)
+## Summary
 
-### P0 Bug Status Snapshot
-- **BUG-003:** ✅ Fixed + ✅ Retest Pass
-  - Short fix: implemented working topbar global search with live suggestions (candidates/companies/jobs) and navigation.
-  - Commit: `955606e`
-- **BUG-012:** ✅ Fixed + 🔁 Patch-2 Deployed (retest pending)
-  - Short fix: In Pipeline metric made dynamic and aligned to unique-candidate counting across active pipeline stages.
-  - Patch-2: excluded null candidateId from aggregation to prevent inflated count.
-  - Commits: `ae22be4`, `1526be1`, `9c061ed`
-- **BUG-015:** ✅ Fixed + 🔁 Patch-2 Deployed (retest pending)
-  - Short fix: Create Login was initially wired to reset-flow trigger.
-  - Patch-2: Create Login now creates portal user first; if account already exists, fallback to reset email flow.
-  - Commits: `955606e`, `9c061ed`
-- **BUG-021:** ✅ Fixed + ✅ Retest Pass
-  - Short fix: Cancel button in company edit is now non-submit (`type="button"`), so it no longer updates data.
-  - Commit: `955606e`
-- **BUG-022:** ✅ Fixed + ✅ Retest Pass
-  - Short fix: after create, app redirects to the newly created company detail and company list fetch limit increased to avoid visibility confusion.
-  - Commit: `32f1681`
+This file is the static bug catalog (definitions and acceptance criteria).
 
-> Note: Marked as **Fixed** from development side; QA should mark **Retest Passed/Failed** after verification.
+> **Live status source of truth:** `docs/QA_LIVE_EXECUTION_BOARD.md`
+
+## Active Backlog Snapshot (definition-only)
+
+| Bug ID | Description | Severity | Notes |
+|---|---|---|---|
+| BUG-012 | In Pipeline count semantics mismatch/relevance issue | Critical | See live board for latest patch/retest status |
+| BUG-015 | Create Login flow trust gap (action vs actual email/account outcome) | Critical | See live board for latest patch/retest status |
+| BUG-023 | Follow-up needs full datetime + timestamp display | High | Implemented; awaiting QA retest |
+| BUG-024 | Parse & Review route reliability | High | Implemented; awaiting QA retest |
+| BUG-025 | Misleading upload icon/action in JD parse flow | Medium | Implemented; awaiting QA retest |
+| BUG-026 | Candidate duplicate validation missing | High | Implemented; awaiting QA retest |
+| BUG-027 | Careers View action broken | High | Implemented; awaiting QA retest |
+| BUG-028 | Careers filters + summary count visibility | Medium | Implemented; awaiting QA retest |
+| BUG-029 | Industry field should be controlled dropdown | Medium | Implemented; awaiting QA retest |
 
 ---
 
@@ -333,28 +330,6 @@ Source normalized from shared issue list. Numbering, wording, priority, and acce
 
 ---
 
-## QA Retest Tracker (to close fixes formally)
-
-| Bug ID | Dev Status | QA Retest | Tester | Date | Notes |
-|---|---|---|---|---|---|
-| BUG-003 | Fixed | Pass | Dimpi | 18-04-26 | Clear/cross action suggested for quick search reset UX. |
-| BUG-007 | Fixed | Pass | Dimpi | 18-04-26 | Notification selection state may not refresh correctly after click. |
-| BUG-008 | Fixed | Pass | Dimpi | 18-04-26 | Profile/Settings route redundancy; Admin label clarity needed. |
-| BUG-012 | Fixed (Patch-2) | Pending |  |  | Retest after null candidateId exclusion patch. |
-| BUG-015 | Fixed (Patch-2) | Pending |  |  | Retest portal-user-create + reset-email fallback path. |
-| BUG-021 | Fixed | Pass | Dimpi | 18-04-26 | Working as expected. |
-| BUG-022 | Fixed | Pass | Dimpi | 18-04-26 | Company should appear without manual refresh (monitor in next build). |
-| BUG-023 | Fixed | Pending |  |  | Follow-up datetime support added; needs QA confirmation. |
-| BUG-024 | Fixed | Pending |  |  | JD parser route mounted; pending QA retest from Jobs Parse & Review. |
-| BUG-025 | Fixed | Pending |  |  | Misleading upload icon replaced in JD parse flow; pending QA UX retest. |
-| BUG-026 | Fixed | Pending |  |  | Duplicate guard added for candidate create/update (email/phone); pending QA retest. |
-| BUG-027 | Fixed | Pending |  |  | Careers admin View action wired to JD detail; pending QA retest. |
-| BUG-028 | Fixed | Pending |  |  | Careers-admin filters and count summary grids added; pending QA retest. |
-| BUG-029 | Fixed | Pending |  |  | Industry field changed to controlled dropdown options; pending QA retest. |
-
-**QA Retest values:** Pending / Pass / Fail
-
----
 
 ## Suggested Sprint Triage
 
