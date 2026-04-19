@@ -19,10 +19,10 @@ Purpose: shared real-time board for developer + tester. Update this file continu
 |---|---|---|---|---|---|---|---|---|---|
 | BUG-029 | Medium | Open | Industry dropdown should enforce controlled values instead of free text |  |  | Pending |  |  | Added from tester Google doc backlog sync |
 | BUG-028 | Medium | Open | Careers page needs filtering and count grids for visibility |  |  | Pending |  |  | Added from tester Google doc backlog sync |
-| BUG-027 | High | Open | Careers View action not functioning |  |  | Pending |  |  | Added from tester Google doc backlog sync |
+| BUG-027 | High | Fixed | Careers admin View action now routes to JD detail page | 5569370 | 2026-04-19 06:40 | Pending |  |  | Re-test view action from careers admin table |
 | BUG-026 | High | Open | Candidate duplicate validation missing (email/name/phone) |  |  | Pending |  |  | Added from tester Google doc backlog sync |
 | BUG-025 | Medium | Open | Remove/disable unsupported upload icon in Job Descriptions |  |  | Pending |  |  | Added from tester Google doc backlog sync |
-| BUG-024 | High | Open | Parse & Review route in Job Descriptions returns route not found |  |  | Pending |  |  | Added from tester Google doc backlog sync |
+| BUG-024 | High | Fixed | Mounted JD parser routes under /api/v1/jds (parse-text and parse-and-validate) | 5569370 | 2026-04-19 06:40 | Pending |  |  | Re-test Parse & Review action from Jobs import dialog |
 | BUG-023 | High | Fixed | Follow-up now supports full datetime input and timestamp display in communication + caller flows | 6a0af56 | 2026-04-18 16:26 | Pending |  |  |  |
 | BUG-003 | Critical | Fixed | Global search suggestions + navigation for candidates/companies/jobs | 955606e | 2026-04-18 14:36 | Pass | Dimpi |  | A clear (cross) icon should be provided after displaying global search results to allow users to easily clear the search input.|
 | BUG-012 | Critical | Fixed (Patch-2) | Excluded null candidateId from pipeline aggregation to prevent phantom count inflation | 9c061ed | 2026-04-19 00:06 | Pending | Dimpi |  | Re-test requested: verify pipeline total and list relevance after patch-2. |
@@ -42,6 +42,7 @@ Purpose: shared real-time board for developer + tester. Update this file continu
 - 2026-04-18 10:57 UTC — Fixed BUG-023 (follow-up datetime support) and deployed; QA retest placeholder added.
 - 2026-04-18 18:37 UTC — Applied Patch-2 for BUG-012 and BUG-015; deployed and moved both to Pending retest.
 - 2026-04-18 19:39 UTC — Synced missing tester Google-doc issues into tracker as BUG-024 to BUG-029 and added Open rows in live board.
+- 2026-04-19 01:11 UTC — Fixed BUG-024 and BUG-027 in code repo, deployed to bss-dev, and marked both Pending QA retest.
 
 ---
 
