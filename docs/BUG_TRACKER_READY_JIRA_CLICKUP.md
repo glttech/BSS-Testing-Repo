@@ -347,7 +347,7 @@ Source normalized from shared issue list. Numbering, wording, priority, and acce
 | BUG-023 | Fixed | Pending |  |  | Follow-up datetime support added; needs QA confirmation. |
 | BUG-024 | Fixed | Pending |  |  | JD parser route mounted; pending QA retest from Jobs Parse & Review. |
 | BUG-025 | Open | Pending |  |  | Unsupported upload icon removal pending. |
-| BUG-026 | Open | Pending |  |  | Candidate duplicate validation pending. |
+| BUG-026 | Fixed | Pending |  |  | Duplicate guard added for candidate create/update (email/phone); pending QA retest. |
 | BUG-027 | Fixed | Pending |  |  | Careers admin View action wired to JD detail; pending QA retest. |
 | BUG-028 | Open | Pending |  |  | Careers filters + count grids pending implementation. |
 | BUG-029 | Open | Pending |  |  | Industry dropdown controlled taxonomy pending. |
