@@ -17,11 +17,11 @@ Purpose: shared real-time board for developer + tester. Update this file continu
 
 | Bug ID | Severity | Dev Status | Fix Summary (short) | Commit | Deployed At (IST) | QA Retest | Tester | Retest Time (IST) | Notes |
 |---|---|---|---|---|---|---|---|---|---|
-| BUG-029 | Medium | Open | Industry dropdown should enforce controlled values instead of free text |  |  | Pending |  |  | Added from tester Google doc backlog sync |
+| BUG-029 | Medium | Fixed | Industry field converted to controlled dropdown options in company form | 1df934b | 2026-04-19 09:38 | Pending |  |  | Re-test company create/edit industry selection behavior |
 | BUG-028 | Medium | Open | Careers page needs filtering and count grids for visibility |  |  | Pending |  |  | Added from tester Google doc backlog sync |
 | BUG-027 | High | Fixed | Careers admin View action now routes to JD detail page | 5569370 | 2026-04-19 06:40 | Pending |  |  | Re-test view action from careers admin table |
 | BUG-026 | High | Fixed | Duplicate candidate guard added on create/update using email/phone checks | dad4127 | 2026-04-19 09:33 | Pending |  |  | Re-test duplicate candidate creation/edit scenarios |
-| BUG-025 | Medium | Open | Remove/disable unsupported upload icon in Job Descriptions |  |  | Pending |  |  | Added from tester Google doc backlog sync |
+| BUG-025 | Medium | Fixed | Replaced misleading upload icon/text in JD parse flow with parse-from-text action | 1df934b | 2026-04-19 09:38 | Pending |  |  | Re-test jobs import dialog UX for unsupported upload action removal |
 | BUG-024 | High | Fixed | Mounted JD parser routes under /api/v1/jds (parse-text and parse-and-validate) | 5569370 | 2026-04-19 06:40 | Pending |  |  | Re-test Parse & Review action from Jobs import dialog |
 | BUG-023 | High | Fixed | Follow-up now supports full datetime input and timestamp display in communication + caller flows | 6a0af56 | 2026-04-18 16:26 | Pending |  |  |  |
 | BUG-003 | Critical | Fixed | Global search suggestions + navigation for candidates/companies/jobs | 955606e | 2026-04-18 14:36 | Pass | Dimpi |  | A clear (cross) icon should be provided after displaying global search results to allow users to easily clear the search input.|
@@ -44,6 +44,7 @@ Purpose: shared real-time board for developer + tester. Update this file continu
 - 2026-04-18 19:39 UTC — Synced missing tester Google-doc issues into tracker as BUG-024 to BUG-029 and added Open rows in live board.
 - 2026-04-19 01:11 UTC — Fixed BUG-024 and BUG-027 in code repo, deployed to bss-dev, and marked both Pending QA retest.
 - 2026-04-19 04:03 UTC — Fixed BUG-026 duplicate validation in backend and deployed; pending QA retest.
+- 2026-04-19 04:09 UTC — Fixed BUG-025 and BUG-029 in frontend and deployed; pending QA retest.
 
 ---
 
