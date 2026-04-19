@@ -18,7 +18,7 @@ Purpose: shared real-time board for developer + tester. Update this file continu
 | Bug ID | Severity | Dev Status | Fix Summary (short) | Commit | Deployed At (IST) | QA Retest | Tester | Retest Time (IST) | Notes |
 |---|---|---|---|---|---|---|---|---|---|
 | BUG-029 | Medium | Fixed | Industry field converted to controlled dropdown options in company form | 1df934b | 2026-04-19 09:38 | Pending |  |  | Re-test company create/edit industry selection behavior |
-| BUG-028 | Medium | Open | Careers page needs filtering and count grids for visibility |  |  | Pending |  |  | Added from tester Google doc backlog sync |
+| BUG-028 | Medium | Fixed | Added careers filters (search/status/publish) and count summary grids in careers-admin | 9b2dff2 | 2026-04-19 10:07 | Pending |  |  | Re-test filter behavior + summary counts in careers-admin |
 | BUG-027 | High | Fixed | Careers admin View action now routes to JD detail page | 5569370 | 2026-04-19 06:40 | Pending |  |  | Re-test view action from careers admin table |
 | BUG-026 | High | Fixed | Duplicate candidate guard added on create/update using email/phone checks | dad4127 | 2026-04-19 09:33 | Pending |  |  | Re-test duplicate candidate creation/edit scenarios |
 | BUG-025 | Medium | Fixed | Replaced misleading upload icon/text in JD parse flow with parse-from-text action | 1df934b | 2026-04-19 09:38 | Pending |  |  | Re-test jobs import dialog UX for unsupported upload action removal |
@@ -45,6 +45,7 @@ Purpose: shared real-time board for developer + tester. Update this file continu
 - 2026-04-19 01:11 UTC — Fixed BUG-024 and BUG-027 in code repo, deployed to bss-dev, and marked both Pending QA retest.
 - 2026-04-19 04:03 UTC — Fixed BUG-026 duplicate validation in backend and deployed; pending QA retest.
 - 2026-04-19 04:09 UTC — Fixed BUG-025 and BUG-029 in frontend and deployed; pending QA retest.
+- 2026-04-19 04:37 UTC — Fixed BUG-028 (careers filters + count grids) and deployed; pending QA retest.
 
 ---
 

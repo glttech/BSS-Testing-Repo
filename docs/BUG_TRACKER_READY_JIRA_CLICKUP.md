@@ -349,7 +349,7 @@ Source normalized from shared issue list. Numbering, wording, priority, and acce
 | BUG-025 | Fixed | Pending |  |  | Misleading upload icon replaced in JD parse flow; pending QA UX retest. |
 | BUG-026 | Fixed | Pending |  |  | Duplicate guard added for candidate create/update (email/phone); pending QA retest. |
 | BUG-027 | Fixed | Pending |  |  | Careers admin View action wired to JD detail; pending QA retest. |
-| BUG-028 | Open | Pending |  |  | Careers filters + count grids pending implementation. |
+| BUG-028 | Fixed | Pending |  |  | Careers-admin filters and count summary grids added; pending QA retest. |
 | BUG-029 | Fixed | Pending |  |  | Industry field changed to controlled dropdown options; pending QA retest. |
 
 **QA Retest values:** Pending / Pass / Fail
